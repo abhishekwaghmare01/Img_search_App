@@ -72,8 +72,6 @@ header form .search-container .material-symbols-outlined{
     display:none;
     text-align: center;
     font-size:15px;
-
-
 }
 
 .imageDiv:hover .overlay h3{
@@ -88,7 +86,28 @@ header form .search-container .material-symbols-outlined{
     height:100%;
 }
 
-//responsive code
+/* Adding style to load more button */
+.loadMoreBtn{
+    border:none;
+    background-color:#20b2aa;
+    color: #fff;
+    font-size: 20px;
+    font-weight:600;
+    padding: 8px 12px;
+    border-radius:4px;
+    cursor: pointer;
+
+}
+
+main section{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 50px 0;
+}
+
+/* Responsive code */
 @media screen and (max-width: 920px){
     header{
         width: 80%;
