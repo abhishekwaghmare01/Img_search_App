@@ -37,6 +37,12 @@ const fetchImages = async (query, pageNo) =>{
         imageElement.appendChild(overlayElement);
         imageContainer.appendChild(imageElement);
     });
+
+    if(data.total_pages === pageNo){
+        loadMoreBtn.style.display = "none";
+    }else{
+        loadMoreBtn.style.display = "block";
+    }
 } 
 
 //Add eventListener to search Form

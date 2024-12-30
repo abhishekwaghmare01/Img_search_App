@@ -96,6 +96,7 @@ header form .search-container .material-symbols-outlined{
     padding: 8px 12px;
     border-radius:4px;
     cursor: pointer;
+    display: none;
 
 }
 
