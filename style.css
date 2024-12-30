@@ -41,6 +41,16 @@ header form .search-container .material-symbols-outlined{
 }   
 .images-container{
     margin-block: 50px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    gap:20px;
+
+}
+.images-container img{
+    width:300px;
+    height:250px;
 }
 
 @media screen and (max-width: 920px){
