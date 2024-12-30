@@ -53,7 +53,7 @@ header form .search-container .material-symbols-outlined{
     height:250px;
 }
 
-.images-container .overlay{
+.imageDiv .overlay{
     position:absolute;
     left:0;
     bottom:0;
@@ -61,12 +61,27 @@ header form .search-container .material-symbols-outlined{
     height:0;
     background-color:rgba(0,0,0,0.7);
     transition: height 0.3s ease;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 
 }
+
+.imageDiv .overlay h3{
+    color:#fff;
+    display:none;
+    text-align: center;
+    font-size:15px;
+
+
+}
+
+.imageDiv:hover .overlay h3{
+    display: block;
+}
+
 .images-container .imageDiv{
-    position: relative;
-   
-    
+    position: relative; 
 }
 
 .imageDiv:hover .overlay{

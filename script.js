@@ -16,15 +16,20 @@ const fetchImages = async (query) =>{
     //console.log(data);
 
     data.results.forEach((photo) => {
+        //creating Image Div
         const imageElement = document.createElement('div');
         imageElement.classList.add('imageDiv');
         imageElement.innerHTML = `<img src="${photo.urls.regular}"/>`;
         
-
         //creating OverLay element
         const overlayElement = document.createElement('div');
         overlayElement.classList.add('overlay');
+        
+        //creating overlay Text
+        const overlayText = document.createElement('h3');
+        overlayText.innerText = `${photo.alt_description}`;
 
+        overlayElement.appendChild(overlayText);
         imageElement.appendChild(overlayElement);
         imageContainer.appendChild(imageElement);
     });
